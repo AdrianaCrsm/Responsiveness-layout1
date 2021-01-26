@@ -46,13 +46,9 @@ body{
     font-weight: 400;
 }
 /*--aside--*/
-main{
-    position:relative;
-}
 aside{
     position:absolute;
-    top:0px;
-    bottom:0px;
+    top:55px;
     padding-left:50px;
     padding-top: 50px;
     width: 25%;
@@ -94,18 +90,17 @@ aside{
     left:32%;
 }
 /*---footer----*/
-footer{
+footer,.week{
     color:#fff;
     font-size:14px;
 }
 .week{
     background-color: black;
-    color:#fff;
     width: 22%;
     padding: 15px 55px 50px 30px;
     position:absolute;
     left:28%;
-    bottom:0px;
+    bottom:0;
 }
 .title-week{
     font-size:1.5em;
@@ -159,22 +154,34 @@ body{
     position: relative;
 }
 .week{
-    left:50%;
-    width: 50%;
-    font-size:14px;   
+    left:0px;
+    width: 51%;
+    font-size:14px; 
+    top:0px;  
+    padding-top:35px;
+    display:inline-block;
 }
 aside{
 left:0px;
+top:0px;
+padding-top:0px;
 width: 48%;
 font-size:12px;
-padding-top:5px;
+display:inline-block;
+
 }
 .design{
     width: 100%; 
     left:0px;
     bottom:0px;
-}
 
+}
+.titles div:first-child{
+    font-size: 4em;
+}
+.titles div:last-child{
+    font-size: 2em;
+}
 .description div:first-child,
 .description div:last-child{
     padding-top:5px;
