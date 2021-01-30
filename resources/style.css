@@ -8,6 +8,7 @@ body{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    /* atentie, nu s-a cerut sa nu avem scroll, nici sa ne intindem doar cat viewport-ul. pe cat de mult posibil sa evitam overflow: hidden, decat daca nu este expres cerut de situatie */
     overflow: hidden;
 }
 /*------nav------*/
@@ -46,6 +47,7 @@ body{
     font-weight: 400;
 }
 /*--aside--*/
+/* pentru aside puteai sa gasesti usor o solutie alternativa de layout */
 aside{
     position:absolute;
     top:55px;
@@ -86,6 +88,7 @@ aside{
 }
 .image-wrapper{
     width: 68%;
+    /* inca un loc unde as recomanda o tehnica diferita de layout, nu pozitionarea */
     position:relative;
     left:32%;
 }
@@ -98,6 +101,7 @@ footer,.week{
     background-color: black;
     width: 22%;
     padding: 15px 55px 50px 30px;
+    /* aici, precum si pt .design este ok sa folosim pozitionarea, dar atentia ca se pare structura nu este foarte stabila, iti atasez un screenshot sa vezi cum vad eu */
     position:absolute;
     left:28%;
     bottom:0;
@@ -128,7 +132,9 @@ footer,.week{
 }
 
 @media (max-width:600px){
+/* atentie la identatie aici */
 body{
+    /* putea fi evitat overflow: hidden inca de la inceput, dar e corect ca ai release-uit scroll-ul vertical pt user */
     overflow:scroll;
 }
 .menu-device{
